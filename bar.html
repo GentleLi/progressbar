@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>自定义进度条</title>
+		<script type="text/javascript" src="state.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bar.css" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="bar" class="bar">
+				<img id="btn_play" src="http://127.0.0.1:8848/progressbar/img/play.svg" alt="播放" width="30" height="30" />
+				<img id="btn_replay" src="http://127.0.0.1:8848/progressbar/img/replay.svg" alt="重新播放" width="30" height="30" />
+				<img id="btn_forward" src="http://127.0.0.1:8848/progressbar/img/fast_forward.svg" alt="快放" width="30" height="30" />
+				<canvas id="canvas" width="400" height="30"></canvas>
+			</div>
+			<br>
+			<label id="btn" style="background-color: black;color: white;">设置进度</label>
+		</div>
+		<script type="text/javascript" src="bar.js"></script>
+		<script type="text/javascript">
+			var btn = document.getElementById("btn")
+			var progressBar = ProgressBar.init()
+			btn.onclick = function() {
+				progressBar.setProgress(26)
+			}
+		</script>
+	</body>
+</html>

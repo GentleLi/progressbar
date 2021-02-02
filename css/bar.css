@@ -1,0 +1,30 @@
+html,
+body,
+#container {
+	padding: 0rem;
+	margin: 0rem;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#img {
+	margin-left: 0.3125rem;
+}
+
+.bar {
+	position: absolute;
+	width: 70%;
+	bottom: 0;
+	margin-left: 20%;
+	border-radius: 0.3125rem;
+	display: inline-block;
+	background-color: #000000;
+	padding: 0.3125rem 0.3125rem 0.3125rem 0.3125rem;
+}
+
+.canvas {
+	width: 100%;
+	margin: 0rem;
+	display: inline-block;
+}
